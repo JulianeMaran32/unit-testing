@@ -1,0 +1,107 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "address": "123 Main St, Anytown, CA",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "address": "456 Elm St, Anytown, CA",
+    "gender": "Female"
+  },
+  {
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.johnson@example.com",
+    "address": "789 Oak St, Anytown, CA",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Mary",
+    "lastName": "Williams",
+    "email": "mary.williams@example.com",
+    "address": "100 Pine St, Anytown, CA",
+    "gender": "Female"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Lee",
+    "email": "david.lee@example.com",
+    "address": "200 Maple St, Anytown, CA",
+    "gender": "Male"
+  },
+  {
+    "firstName": "Peter",
+    "lastName": "Jackson",
+    "email": "peterjackson@example.com",
+    "address": "555 Maple Street, Anytown, CA 91234",
+    "gender": "male"
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Clark",
+    "email": "emilyclark@example.com",
+    "address": "666 Oak Avenue, Anytown, CA 91234",
+    "gender": "female"
+  },
+  {
+    "firstName": "Noah",
+    "lastName": "Miller",
+    "email": "noahmiller@example.com",
+    "address": "777 Elm Street, Anytown, CA 91234",
+    "gender": "male"
+  },
+  {
+    "firstName": "Isabella",
+    "lastName": "Johnson",
+    "email": "isabellajohnson@example.com",
+    "address": "888 Pine Street, Anytown, CA 91234",
+    "gender": "female"
+  },
+  {
+    "firstName": "Oliver",
+    "lastName": "Davis",
+    "email": "oliverdavis@example.com",
+    "address": "999 Birch Street, Anytown, CA 91234",
+    "gender": "male"
+  },
+  {
+    "firstName": "Ava",
+    "lastName": "Williams",
+    "email": "avawilliams@example.com",
+    "address": "1010 Cedar Street, Anytown, CA 91234",
+    "gender": "female"
+  },
+  {
+    "firstName": "William",
+    "lastName": "Brown",
+    "email": "williambrown@example.com",
+    "address": "1111 Willow Street, Anytown, CA 91234",
+    "gender": "male"
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Jones",
+    "email": "sophiajones@example.com",
+    "address": "1212 Aspen Street, Anytown, CA 91234",
+    "gender": "female"
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "Garcia",
+    "email": "benjamingarcia@example.com",
+    "address": "1313 Elm Street, Anytown, CA 91234",
+    "gender": "male"
+  },
+  {
+    "firstName": "Olivia",
+    "lastName": "Rodriguez",
+    "email": "oliviarodriguez@example.com",
+    "address": "1414 Maple Street, Anytown, CA 91234",
+    "gender": "female"
+  }
+]

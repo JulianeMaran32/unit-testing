@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  application:
+    name: "testing-rest-api"
+  #  profiles:
+  #    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/testing_db?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    open-in-view: true
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    web: DEBUG
+    root: INFO
+    org.springframework: ERROR
+    org.hibernate: ERROR
+    org.testcontainers: DEBUG
+    com.juhmaran.showcase.testingrestapi: ERROR
+
+info:
+  app:
+    artifactId: '@project.artifactId@'
+    description: '@project.description@'
+    groupId: '@project.groupId@'
+    name: '@project.name@'
+    version: '@project.version@'

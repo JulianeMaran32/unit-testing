@@ -1,0 +1,36 @@
+### listar pessoas
+GET http://localhost:8080/api/person
+Content-Type: application/json
+
+### buscar pessoa por ID
+GET http://localhost:8080/api/person/2
+Content-Type: application/json
+
+### cadastrar pessoa
+POST http://localhost:8080/api/person
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@example.com",
+  "address": "456 Elm St, Anytown, CA",
+  "gender": "Female"
+}
+
+### atualizar pessoa por ID
+PUT http://localhost:8080/api/person
+Content-Type: application/json
+
+{
+  "id": 53,
+  "firstName": "Jane",
+  "lastName": "Smith 2",
+  "email": "jane.smith@example.com",
+  "address": "456 Elm St, Anytown, CA",
+  "gender": "Female"
+}
+
+### excluir pessoa por ID
+DELETE http://localhost:8080/api/person/6
+Content-Type: application/json

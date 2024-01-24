@@ -1,0 +1,36 @@
+# Docker Compose file format version will be used.
+version: '3.8'
+
+#  individual services in isolated containers. Our application has two services: app (Spring Boot) and mysqldb (MySQL database).
+services:
+
+  mysql:
+    image: mysql:8.3.0
+    container_name: mysql
+    restart: always
+    env_file:
+      - src/main/resources/.env
+    environment:
+      MYSQL_DATABASE: testing_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - db:/var/lib/mysql
+
+  app:
+    container_name: testing-rest-api
+    build:
+      context: ./testing-rest-api
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+      - "8080:8080"
+    depends_on:
+      - mysql
+
+# named volumes that keeps our data alive after restart.
+volumes:
+  db:

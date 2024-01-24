@@ -1,0 +1,35 @@
+### listar pessoas
+GET http://localhost:8080/api/person
+Content-Type: application/json
+
+### filtrar por firstName (igual)
+GET http://localhost:8080/api/person?firstName=David
+Content-Type: application/json
+
+### Listar pessoas por lastName (contém)
+GET http://localhost:8080/api/person?lastName=Doe
+Content-Type: application/json
+
+### Listar pessoas por email (combinação exata)
+GET http://localhost:8080/api/person?email=john.doe@example.com
+Content-Type: application/json
+
+### Listar pessoas por gender (multiplos valores)
+GET http://localhost:8080/api/person?gender=male&gender=female
+Content-Type: application/json
+
+### Combinando filtros
+GET http://localhost:8080/api/person?firstName=John&lastName=Doe&gender=male
+Content-Type: application/json
+
+### Adiciona paginação
+GET http://localhost:8080/api/person?page=2&size=10
+Content-Type: application/json
+
+### Combinando filtros e paginação
+GET http://localhost:8080/api/person?firstName=John&page=3&size=5
+Content-Type: application/json
+
+### Paginação, tamanho, ordenação
+GET http://localhost:8080/api/persons?page=0&size=10&sort=firstName,asc&sort=lastName,desc
+Content-Type: application/json

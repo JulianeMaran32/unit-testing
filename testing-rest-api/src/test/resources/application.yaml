@@ -1,0 +1,35 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /api
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  application:
+    name: "testing-rest-api"
+  jpa:
+    open-in-view: true
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  profiles:
+    active: test
+
+logging:
+  level:
+    web: DEBUG
+    root: INFO
+    org.springframework: DEBUG
+    org.hibernate: ERROR
+    org.testcontainers: DEBUG
+    com.juhmaran.showcase.testingrestapi: DEBUG
+
+info:
+  app:
+    artifactId: '@project.artifactId@'
+    description: '@project.description@'
+    groupId: '@project.groupId@'
+    name: '@project.name@'
+    version: '@project.version@'
